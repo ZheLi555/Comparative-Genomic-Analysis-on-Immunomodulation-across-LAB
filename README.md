@@ -4,7 +4,9 @@
 
 # 解析手順
 1.Sequences Alignment
+
 2.FASTA Extraction
+
 3.Comparative Genome Analysis
 2.機械学習
 

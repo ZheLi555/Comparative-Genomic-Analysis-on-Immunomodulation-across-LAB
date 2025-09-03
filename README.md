@@ -12,7 +12,6 @@
 # ファイル一覧
 1. Raw files
 | Data           | Path                    | Description                     |
-|----------------|-------------------------|---------------------------------|
 | LAB_genomes    | `./Data/genomes/`       | 193株乳酸菌の全ゲノム配列（.fna） |
 | IL_12_values   | `./Data/metadata.csv`   | IL-12誘導能（ELISA測定データ）    |
 | UniRef90_database | `./Data/UniRef90/uniref90.dmnd` | DIAMOND用 UniRef90 データベース（ローカル）|

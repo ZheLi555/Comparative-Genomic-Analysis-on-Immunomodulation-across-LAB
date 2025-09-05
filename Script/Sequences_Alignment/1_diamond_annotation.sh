@@ -7,7 +7,7 @@ if [ "$#" -ne 3 ]; then
 fi
 
 # === 引数の取得 ===
-FFN_DIR="$1"        # 入力ディレクトリ（.ffn ファイルが含まれる）
+FFN_DIR="$1"        # 入力ディレクトリ（.fna ファイルが含まれる）
 UNIREF90_DB="$2"    # DIAMOND用 UniRef90 データベース (.dmnd)
 OUTPUT_DIR="$3"     # 出力ディレクトリ
 
@@ -15,11 +15,11 @@ OUTPUT_DIR="$3"     # 出力ディレクトリ
 mkdir -p "$OUTPUT_DIR"
 
 # === 各FFNファイルに対して DIAMOND を実行 ===
-for FFN_FILE in "$FFN_DIR"/*.ffn; do
-    BASENAME=$(basename "$FFN_FILE" .ffn)
+for FFN_FILE in "$FNA_DIR"/*.fna; do
+    BASENAME=$(basename "$FNA_FILE" .fna)
     OUTPUT_FILE="${OUTPUT_DIR}/${BASENAME}_diamond.out"
 
-    echo "▶ 処理中: $FFN_FILE"
+    echo "▶ 処理中: $FNA_FILE"
 
     diamond blastx \
         -d "$UNIREF90_DB" \

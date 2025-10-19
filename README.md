@@ -4,7 +4,7 @@
 1. Sequences Alignment  
 2. FASTA Extraction  
 3. Comparative Genome Analysis  
-4. 機械学習  
+4. Machine Learning  
 
 ## ファイル一覧
 
@@ -15,4 +15,5 @@
 | UniRef90_database | `./Data/UniRef90/uniref90.dmnd`      | DIAMOND用 UniRef90 データベース（ローカル） |
 
 > **Note**: The UniRef90 database (`uniref90.dmnd`) was downloaded from [UniProt FTP](https://ftp.uniprot.org/pub/databases/uniprot/uniref/) on 2024-10-16.
+
 
